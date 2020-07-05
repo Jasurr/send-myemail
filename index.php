@@ -5,7 +5,7 @@
     <title>Send Email</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
-      /*  $(document).ready(function () {
+       $(document).ready(function () {
 
             $('#submit').click(function () {
                 var name = $('#name').val();
@@ -21,17 +21,17 @@
                     }
                 })
             })
-        })*/
+        })
     </script>
 </head>
 <body>
-<form action="send.php" method="post">
+
     <label>Name</label>
     <input type="text" name="name" /><br />
     <label>Email</label>
     <input type="email" name="email"/>
-    <button type="submit">Send Mail</button>
-</form>
+    <button id="submit">Send Mail</button>
+
 
 </body>
 </html>
