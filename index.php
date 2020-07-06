@@ -1,37 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Send Email</title>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script>
-       $(document).ready(function () {
+<html>
+  <head>
+    <!-- <link href="css/styles.css" rel="stylesheet" type="text/css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Questrial|Syncopate|Quicksand|Monda|Varela' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/scripts.js"></script>
 
-            $('#submit').click(function () {
-                var name = $('#name').val();
-                var email = $('#email').val();
+    <title>Triangular</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">Uchburchak</h1>
+        <h2 class="header2">Uchburchak tomonlarini kiriting. </h2>
+      <div class="row">
+        <div class="col-md-6">
+      <form id="triangles">
+        <div class="form-group">
+          <label for="side1">Side 1:</label>
+          <input id="side1" type="number">
 
-                var varData = 'name=' + name + '&email=' + email;
-                $.ajax({
-                    type:'POST',
-                    url:'send.php',
-                    data: varData,
-                    success: function () {
-                        alert("It was a success");
-                    }
-                })
-            })
-        })
-    </script>
-</head>
-<body>
+<br>
+        <label for="side2">Side 2:</label>
+        <input id="side2" type="number">
+<br>
+        <label for="side3">Side 3:</label>
+        <input id="side3" type="number">
 
-    <label>Name</label>
-    <input type="text" name="name" /><br />
-    <label>Email</label>
-    <input type="email" name="email"/>
-    <button id="submit">Send Mail</button>
+        <br>
+        <br>
 
+        <button type="submit" class="button">Hisoblash</button>
+        <br>
+      </form>
+    </div>
+  </div>
 
-</body>
+     <div class="col-md-2" style="background: beige">
+      <p>Yuzi</p>
+      <ul class="equilateral-list" >
+      </ul>
+      </div>
+
+    </div>
+  </body>
 </html>
