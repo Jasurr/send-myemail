@@ -14,18 +14,18 @@
       <h1 class="header">Uchburchak</h1>
         <h2 class="header2">Uchburchak tomonlarini kiriting. </h2>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
       <form id="triangles">
         <div class="form-group">
           <label for="side1">Side 1:</label>
-          <input id="side1" type="number">
+          <input id="side1" type="number" class="form-control item" >
 
 <br>
         <label for="side2">Side 2:</label>
-        <input id="side2" type="number">
+        <input id="side2" type="number" class="form-control item">
 <br>
         <label for="side3">Side 3:</label>
-        <input id="side3" type="number">
+        <input id="side3" type="number" class="form-control item">
 
         <br>
         <br>
